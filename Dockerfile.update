@@ -8,7 +8,8 @@ ENV PYTHONPATH /var/task:/var/task/source
 
 RUN pip install -U zappa==${version}
 
-# Add your extra requirements here e.g. postgres-devel 
+# Add your extra requirements here e.g. postgres-devel
+pip install -U python-lambda numpy pandas sqlalchemy Levenshtein-search fuzzywuzzy
 # RUN yum install -y yourpackages
 
 CMD ["zappa"]
