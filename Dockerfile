@@ -8,7 +8,7 @@ RUN yum clean all && \
     yum -y install python27-devel python27-virtualenv vim postgresql postgresql-devel mysql mysql-devel gcc lapack-devel blas-devel libyaml-devel && \
     yum --enablerepo=epel -y install hdf5-devel && \
     pip install -U pip && \
-    pip install -U zappa mysql-python
+    pip install -U zappa mysql-python python-lambda numpy pandas Levenshtein-search fuzzywuzzy SQLAlchemy
 
 WORKDIR /var/task
 
